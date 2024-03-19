@@ -1188,3 +1188,19 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px; /* Upper margin */
+  padding-top: 40px;
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2); 
+  border-radius: 30px;
+}
+.image-container img {
+  margin-bottom: 15px; /* Space between images */
+}
+/* Remove margin from the last image */
+.image-container img:last-child {
+  margin-bottom: 0;
+}
