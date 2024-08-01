@@ -27,7 +27,9 @@ body::before {
   top: 0;
   height: 100vh;
   z-index: -1;
+  background-position: right calc(200% + 50px) right; /* Adjust this value as needed */
 }
+
 
 @media (min-width: 1024px) {
   body::before {
