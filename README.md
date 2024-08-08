@@ -34,8 +34,7 @@ Here are some key projects that I have worked on:
 - **Time Series Analysis**: ![█████████░] - Advanced
 - **Data Science**: ![█████████░] - Advanced
 - **Dashboard Visualization**: ![████████░░] - Intermediate
-- 
-#### KEY
+
 [██████████]: Full proficiency (10/10)
 [█████████░]: Advanced (9/10)
 [████████░░]: Intermediate (8/10)
@@ -43,13 +42,13 @@ Here are some key projects that I have worked on:
 
 ### Resume
 
-For a detailed overview of my professional experience, you can download my resume (updated March 2023) [here](https://drive.google.com/file/d/1lj0l5v7oqWFCEqX5XLlkeBHdOANpnGMB/view?usp=sharing).
+For a detailed overview of my professional experience, you can download my resume (updated March 2023) [here](https://drive.google.com/file/d/1CH2C1qcTGrejX48pN4JtNccexMUbUx4Y/view?usp=drive_link).
 
 ### Contact
 
-I am open to collaboration and new opportunities. Feel free to reach out to me via email at [your.email@example.com] or connect with me on [LinkedIn](link/to/linkedin) for further discussion.
+I am open to collaboration and new opportunities. Feel free to reach out to me via email at [kizarzakir@gmail.com](kizarzakir@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/khizer-zakir/) for further discussion.
 
 Thank you for visiting my portfolio!
 
-*[Your Name]*
+*[KHIZER ZAKIR]*
  
