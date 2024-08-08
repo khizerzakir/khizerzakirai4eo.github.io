@@ -986,6 +986,25 @@ section .container {
   }
 }
 
+.portfolio-details .swiper-container {
+  width: 100%;
+  height: auto; /* Adjusts height automatically based on content */
+  overflow: hidden; /* Prevents content overflow */
+  position: relative; /* Keeps elements inside the container */
+}
+
+.portfolio-details .swiper-slide {
+  display: flex; /* Ensures content is aligned properly */
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+}
+
+.portfolio-details .swiper-slide img {
+  max-width: 100%; /* Ensures the image does not exceed the container's width */
+  max-height: 100%; /* Ensures the image does not exceed the container's height */
+  object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
+}
+
 .portfolio-details .swiper-pagination {
   margin-top: 20px;
   position: relative;
@@ -1001,6 +1020,7 @@ section .container {
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #18d26e;
 }
+
 
 /*--------------------------------------------------------------
 # Contact
@@ -1163,15 +1183,16 @@ section .container {
 # Credits
 --------------------------------------------------------------*/
 .credits {
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  position: fixed;  /* Fixes the position relative to the viewport */
+  left: 15px;       /* Distance from the left edge */
+  bottom: 15px;     /* Distance from the bottom edge */
   padding: 15px;
-  text-align: right;
+  text-align: left; /* Align text to the left */
   font-size: 13px;
   color: #fff;
   z-index: 999999;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a background for better readability */
+  border-radius: 5px; /* Optional: rounds the corners for a more polished look */
 }
 
 @media (max-width: 992px) {
