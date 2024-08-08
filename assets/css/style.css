@@ -893,7 +893,7 @@ section .container {
 
 .portfolio .portfolio-wrap .portfolio-links {
   text-align: center;
-  z-index: 4;
+  z-index: 10;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
