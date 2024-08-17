@@ -442,6 +442,85 @@ section .container {
   margin-bottom: 0;
 }
 
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between skill items */
+  justify-content: flex-start; /* Align items to the left */
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.33% - 20px); /* Adjust width according to the number of items per row */
+  box-sizing: border-box; /* Ensure padding/margin don't affect width */
+}
+
+.skill-icon {
+  font-size: 40px; /* Size of the icon */
+  margin-bottom: 10px; /* Space between icon and progress bar */
+  text-align: center;
+}
+
+.skill-icon i {
+  font-size: 40px; /* Adjust icon size */
+}
+
+.small-progress-bar-wrap {
+  width: 100%; /* Full width under the icon */
+  background: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 6px; /* Smaller height for the progress bar */
+}
+
+.small-progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0;
+  transition: width 1s ease;
+  position: relative;
+}
+
+.small-progress-bar[aria-valuenow="90"] {
+  width: 90%;
+}
+
+.small-progress-bar[aria-valuenow="80"] {
+  width: 80%;
+}
+
+/* Percentage styling */
+.progress-percentage {
+  position: absolute;
+  right: 10px;
+  top: -25px;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between icons */
+  justify-content: flex-start; /* Align items to the left */
+  margin-top: 20px; /* Space between skills and icons */
+}
+
+.icons-container a img {
+  transition: transform 0.2s ease;
+}
+
+.icons-container a img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/

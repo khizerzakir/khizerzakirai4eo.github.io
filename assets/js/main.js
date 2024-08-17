@@ -45,6 +45,55 @@
     })
   }
 
+
+/**
+ * connect github
+ */
+const githubUsername = 'khizerzakir'; // Your GitHub username
+const ownedReposUrl = `https://api.github.com/users/${githubUsername}/repos?type=owner&per_page=100`;
+const memberReposUrl = `https://api.github.com/users/${githubUsername}/repos?type=member&per_page=100`;
+
+let ownedRepoCount = 0;
+let memberRepoCount = 0;
+
+const fetchRepos = async (url) => {
+  let totalCount = 0;
+  try {
+    let nextUrl = url;
+    while (nextUrl) {
+      const response = await fetch(nextUrl);
+      if (!response.ok) {
+        throw new Error(`GitHub API returned status ${response.status}`);
+      }
+      const data = await response.json();
+      totalCount += data.length;
+
+      // Check if there's a next page by inspecting the Link header
+      const linkHeader = response.headers.get('link');
+      if (linkHeader && linkHeader.includes('rel="next"')) {
+        nextUrl = linkHeader.split(',').find(s => s.includes('rel="next"')).split(';')[0].slice(1, -1);
+      } else {
+        nextUrl = null;
+      }
+    }
+  } catch (error) {
+    console.error('Error fetching GitHub data:', error);
+    document.getElementById('github-repos').innerText = 'Error fetching data';
+  }
+  return totalCount;
+};
+
+const updateRepoCount = async () => {
+  ownedRepoCount = await fetchRepos(ownedReposUrl);
+  memberRepoCount = await fetchRepos(memberReposUrl);
+
+  const totalRepoCount = ownedRepoCount + memberRepoCount;
+  document.getElementById('github-repos').innerText = totalRepoCount;
+};
+
+updateRepoCount();
+
+
   /**
    * Mobile nav toggle
    */
