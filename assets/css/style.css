@@ -377,6 +377,7 @@ section .container {
 }
 
 .section-title h2 {
+  text-align: center;
   font-size: 14px;
   font-weight: 500;
   padding: 0;
@@ -398,6 +399,7 @@ section .container {
 }
 
 .section-title p {
+  text-align: center;
   margin: 0;
   margin: -15px 0 15px 0;
   font-size: 36px;
