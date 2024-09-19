@@ -20,14 +20,14 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/try_back.jpg") top right no-repeat;
+  background: #040404 url("../img/tedx_2.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
-  z-index: -1;
-  background-position: right calc(200% + 50px) right; /* Adjust this value as needed */
+  z-index: -2;
+  background-position: right calc(100% + 30px) right; /* Adjust this value as needed */
 }
 
 
