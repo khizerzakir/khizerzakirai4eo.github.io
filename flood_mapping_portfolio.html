@@ -5,16 +5,16 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Personal Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>SAR Flood Mapping Details</title>
+  <meta content="Flood Mapping using SAR Sentinel-1 and Change Detection Approach" name="description">
+  <meta content="SAR, Flood Mapping, Change Detection, Remote Sensing, Sentinel-1" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,13 +27,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Personal
-  * Updated: Jan 29 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -47,21 +40,21 @@
         <div class="row">
 
           <div class="col-lg-8">
-            <h2 class="portfolio-title">Summary Page</h2>
+            <h2 class="portfolio-title">SAR Flood Mapping: Change Detection Approach</h2>
 
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/SAR.png" alt="">
+                  <img src="assets/img/portfolio/SAR.png" alt="SAR Flood Mapping">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
+                  <img src="assets/img/portfolio/flood_sar_extent.png" alt="Change Detection Analysis">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="Flood Mapping Results">
                 </div>
 
               </div>
@@ -71,20 +64,35 @@
           </div>
 
           <div class="col-lg-4 portfolio-info">
-            <h3>Project information</h3>
+            <h3>Project Information</h3>
             <ul>
               <li><strong>Project</strong>: Flood Mapping Using SAR </li>
-              <li><strong>Institution</strong>: Universite Bretagne Sud</li>
+              <li><strong>Client</strong>: Universite Bretagne Sud</li>
               <li><strong>Project date</strong>: November, 2023</li>
-              <li><strong>Project URL</strong>: <a href="https://github.com/khizerzakir/torchspdnet"> Flood Mapping for Pakistan </a></li>
+              <li><strong>Project URL</strong>: <a href="https://code.earthengine.google.com/7414cc03ef0e8ef241290b8d87b4bc3d?noload=true"> Flood Mapping for Pakistan </a></li>
               <li><strong>Key Skills</strong>: SAR Data Analysis, Remote Sensing, Change Detection, Flood Mapping, Google Earth Engine, Code Documentation </li>
             </ul>
 
             <p>
-              Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+              Within this project, Sentinel-1 SAR data is used to generate flood extent maps through a change detection approach. The method compares pre- and post-event images to identify flooded areas. Sentinel-1 GRD imagery with preprocessing steps like Thermal-Noise Removal, Radiometric Calibration, and Terrain Correction is utilized, and additional Speckle Filtering is applied.
             </p>
           </div>
 
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <h3>Project Overview</h3>
+            <p>
+              This project leverages Sentinel-1 SAR (Synthetic Aperture Radar) data to map flood-affected areas using a change detection approach. The method relies on analyzing radar images captured before and after a flood event. By identifying changes in surface backscatter, areas inundated by water can be delineated accurately.
+            </p>
+            <p>
+              Ground Range Detected (GRD) images are used, which have undergone preprocessing steps such as Thermal Noise Removal, Radiometric Calibration, and Terrain Correction. To improve the quality of the radar images and minimize noise, a Speckle Filtering technique is applied.
+            </p>
+            <p>
+              The resulting flood extent maps are invaluable for disaster management, relief efforts, and studying the impact of floods in affected regions. This approach is computationally efficient and leverages the capabilities of Google Earth Engine for large-scale geospatial analysis.
+            </p>
+          </div>
         </div>
 
       </div>
@@ -93,10 +101,6 @@
   </main><!-- End #main -->
 
   <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
     Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
   </div>
 
